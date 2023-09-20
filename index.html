@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot Aspiradora</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="sources/script.js"></script>
+    <link rel="stylesheet" href="sources/style.css">
+</head>
+<body>
+    <div class="container">
+    <div class="row border border-dark">
+        <div class="col border border-dark">
+            <div><h1>BOT Aspiradora</h1></div>
+        </div>
+        <div class="col border border-dark">
+            <div></div>
+        </div>
+    </div>
+    </div>
+    
+    <div class="container">
+        <div class="row border border-dark">
+            <div class="col ">
+                <div class="container">
+                    <div class="wrap"></div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="grid-item4">
+                    <div>
+                        <div id="consola" class="text-white bg-dark m-1">
+                            <div class="fakeMenu">
+                                <div class="fakeButtons fakeClose"></div>
+                                <div class="fakeButtons fakeMinimize"></div>
+                                <div class="fakeButtons fakeZoom"></div>
+                            </div>
+                            <div class="fakeScreen">
+                                <p class="line4">><span class="cursor4" id="lastcurs">_</span></p>
+                                <div id="cmd">
+                                    <p class="line2">AI<img src="sources/ai_image.png"
+                                            style="width:10%;height:10%;" />>Vacuum cleaner AI
+                                        active....,<span class="cursor1">_</span></p>
+                                    <p class="line1">AI<img src="sources/ai_image.png"
+                                            style="width:10%;height:10%;" />>_Waiting for <img src="sources/head.png"
+                                            style="width:10%;height:10%;" />Human input..<span class="cursor2">_</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="pop-up" id="selectgame">
+            <div class="mt-5 d-flex justify-content-center"><h3>Enter Dimensions of the grid</h3></div>
+            <div class="d-flex justify-content-center">
+                <select class="d-flex custom-select" id='x_row'>
+                    <option selected>Filas</option>
+                    <option value="2">2</option>
+                    <option value="4">4</option>
+                    <option value="6">6</option>
+                </select>
+        
+                <select class="d-flex custom-select" id='x_col'>
+                    <option selected>Columnas</option>
+                    <option value="2">2</option>
+                    <option value="4">4</option>
+                    <option value="6">6</option>
+                </select>
+        
+                <button class=" d-flex btn btn-outline-secondary" id="go_cr">Jugar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="pop-up2" id="finjuego">
+        <div class="row">
+          <div class="el-o"></i></div>
+          <h3 class="big inline out">WINS!</h3>
+        </div>
+        <h3 id="sub">click inside to play again</h3>
+      </div>
+
+</body>
+</html>
